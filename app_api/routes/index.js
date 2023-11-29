@@ -14,4 +14,8 @@ router
     .put(ctrlUsers.userUpdate)
     .delete(ctrlUsers.userDelete);
 
+router
+    .route('/search/:name')
+    .get(ctrlUsers.userFindName);
+
 module.exports = router;
